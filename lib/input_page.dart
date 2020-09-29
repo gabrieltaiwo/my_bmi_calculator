@@ -5,7 +5,7 @@ import 'package:mybmicalculator/reusable_card.dart';
 import 'package:mybmicalculator/icon_content.dart';
 // import 'package:weight_slider/weight_slider.dart';
 import 'package:mybmicalculator/constants.dart';
-import 'results_page.dart';
+//import 'results_page.dart';
 import 'round_icon_button.dart';
 import 'bottom_button.dart';
 import 'stack_result_page.dart';
@@ -35,6 +35,7 @@ class _InputPageState extends State<InputPage> {
     return Scaffold(
       backgroundColor: kactiveCardColour,
       appBar: AppBar(
+        elevation: 0,
         centerTitle: true,
         title: Text(
           'myBMI Calculator',

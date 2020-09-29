@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'reusable_card.dart';
-import 'input_page.dart';
+//import 'input_page.dart';
 import 'bottom_button.dart';
 import 'stack_result_page.dart';
 

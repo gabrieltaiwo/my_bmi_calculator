@@ -18,6 +18,7 @@ class StackResultPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: kactiveCardColour,
       appBar: AppBar(
+        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
@@ -59,7 +60,7 @@ class StackResultPage extends StatelessWidget {
               ],
             ),
             decoration: BoxDecoration(
-              color: kactiveCardColour,
+              // color: kactiveCardColour,
               shape: BoxShape.rectangle,
               boxShadow: [
                 BoxShadow(
