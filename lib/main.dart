@@ -13,7 +13,7 @@ class MyBMICalculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'myBMI',
       theme: ThemeData(
         primaryColor: Color(0xFFFFFFFF),
         scaffoldBackgroundColor: Color(0xFFF5F5F5),
