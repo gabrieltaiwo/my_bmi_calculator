@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import '../constants.dart';
+//import 'package:flutter_svg/flutter_svg.dart';
 
 class BottomButton extends StatelessWidget {
-  BottomButton({@required this.onTap, @required this.buttonTitle});
+  BottomButton({@required this.onTap, this.buttonTitle});
 
   final Function onTap;
   final String buttonTitle;
@@ -20,6 +21,7 @@ class BottomButton extends StatelessWidget {
             width: double.infinity,
             height: kbottomContainerHeight,
             child: Center(
+              //child: SvgPicture.asset("images/PacMan.svg"),
               child: Text(
                 buttonTitle,
                 style: kbblabelTextStyle,

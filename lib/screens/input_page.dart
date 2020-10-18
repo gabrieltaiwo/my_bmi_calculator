@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:height_slider/height_slider.dart';
-import 'package:mybmicalculator/reusable_card.dart';
-import 'package:mybmicalculator/icon_content.dart';
-// import 'package:weight_slider/weight_slider.dart';
+import 'file:///C:/Users/gab/AndroidStudioProjects/my_bmi_calculator/lib/widgets/reusable_card.dart';
+import 'file:///C:/Users/gab/AndroidStudioProjects/my_bmi_calculator/lib/widgets/icon_content.dart';
 import 'package:mybmicalculator/constants.dart';
-import 'results_page.dart';
-import 'round_icon_button.dart';
-import 'bottom_button.dart';
+import '../widgets/round_icon_button.dart';
+import '../widgets/bottom_button.dart';
 import 'stack_result_page.dart';
-import 'calculator_brain.dart';
+import '../logic/calculator_brain.dart';
+import '../constants.dart';
 
 const KlabelTextStyle = TextStyle(fontSize: 13.0, color: Colors.blueAccent);
 
@@ -35,6 +34,7 @@ class _InputPageState extends State<InputPage> {
     return Scaffold(
       backgroundColor: kactiveCardColour,
       appBar: AppBar(
+        elevation: 1,
         centerTitle: true,
         title: Text(
           'myBMI Calculator',
@@ -66,6 +66,7 @@ class _InputPageState extends State<InputPage> {
                                   icon: FontAwesomeIcons.mars,
                                   label: 'MALE',
                                 ),
+                                shadow: kShadow,
                               ),
                             ),
                             Expanded(
@@ -82,6 +83,7 @@ class _InputPageState extends State<InputPage> {
                                   icon: FontAwesomeIcons.venus,
                                   label: 'FEMALE',
                                 ),
+                                shadow: kShadow,
                               ),
                             ),
                           ],
@@ -132,6 +134,7 @@ class _InputPageState extends State<InputPage> {
                               ],
                             ),
                           ),
+                          shadow: kShadow,
                         ),
                       ),
                       Expanded(
@@ -179,6 +182,7 @@ class _InputPageState extends State<InputPage> {
                               ],
                             ),
                           ),
+                          shadow: kShadow,
                         ),
                       ),
                     ],
@@ -190,10 +194,6 @@ class _InputPageState extends State<InputPage> {
                       colour: kactiveCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Text(
-                            'HEIGHT',
-                            style: klabelTextStyle,
-                          ),
                           Container(
                             height: 450,
                             width: 250,
@@ -206,8 +206,16 @@ class _InputPageState extends State<InputPage> {
                               },
                             ),
                           ),
+                          SizedBox(
+                            height: 20.0,
+                          ),
+                          Text(
+                            'HEIGHT',
+                            style: klabelTextStyle,
+                          ),
                         ],
                       ),
+                      shadow: kShadow,
                     ),
                   ),
                 ),

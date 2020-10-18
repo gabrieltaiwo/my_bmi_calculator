@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'bottom_button.dart';
-import 'reusable_card.dart';
+import '../constants.dart';
+import '../widgets/bottom_button.dart';
+import '../widgets/reusable_card.dart';
 
 class StackResultPage extends StatelessWidget {
   StackResultPage(
@@ -18,6 +18,7 @@ class StackResultPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: kactiveCardColour,
       appBar: AppBar(
+        elevation: 0,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back,
@@ -59,7 +60,7 @@ class StackResultPage extends StatelessWidget {
               ],
             ),
             decoration: BoxDecoration(
-              color: kactiveCardColour,
+              // color: kactiveCardColour,
               shape: BoxShape.rectangle,
               boxShadow: [
                 BoxShadow(
