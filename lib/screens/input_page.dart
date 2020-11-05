@@ -97,15 +97,11 @@ class _InputPageState extends State<InputPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'WEIGHT',
-                                  style: klabelTextStyle,
-                                ),
-                                Text(
                                   weight.toString(),
                                   style: knumberTextStyle,
                                 ),
                                 SizedBox(
-                                  height: 10,
+                                  height: 5,
                                 ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -130,7 +126,14 @@ class _InputPageState extends State<InputPage> {
                                       },
                                     )
                                   ],
-                                )
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                  'WEIGHT',
+                                  style: klabelTextStyle,
+                                ),
                               ],
                             ),
                           ),
@@ -145,15 +148,11 @@ class _InputPageState extends State<InputPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
-                                  'AGE',
-                                  style: klabelTextStyle,
-                                ),
-                                Text(
                                   age.toString(),
                                   style: knumberTextStyle,
                                 ),
                                 SizedBox(
-                                  height: 10,
+                                  height: 5,
                                 ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -178,7 +177,14 @@ class _InputPageState extends State<InputPage> {
                                       },
                                     )
                                   ],
-                                )
+                                ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Text(
+                                  'AGE',
+                                  style: klabelTextStyle,
+                                ),
                               ],
                             ),
                           ),
@@ -194,9 +200,9 @@ class _InputPageState extends State<InputPage> {
                       colour: kactiveCardColour,
                       cardChild: Column(
                         children: <Widget>[
-                          Container(
-                            height: 450,
-                            width: 250,
+                          Expanded(
+                            // height: 450,
+                            // width: 250,
                             child: HeightSlider(
                               height: height,
                               onChange: (val) {
@@ -207,11 +213,14 @@ class _InputPageState extends State<InputPage> {
                             ),
                           ),
                           SizedBox(
-                            height: 20.0,
+                            height: 12.0,
                           ),
                           Text(
                             'HEIGHT',
                             style: klabelTextStyle,
+                          ),
+                          SizedBox(
+                            height: 20.0,
                           ),
                         ],
                       ),

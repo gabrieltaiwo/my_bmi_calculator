@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
-import 'screens/input_page.dart';
-//import 'package:provider/provider.dart';
+import 'screens/splash_screen.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyBMICalculator());
@@ -11,6 +11,10 @@ class MyBMICalculator extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+    ]);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'myBMI',
@@ -21,7 +25,7 @@ class MyBMICalculator extends StatelessWidget {
         primarySwatch: Colors.blue,
         // visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: InputPage(),
+      home: SplashScreen(),
     );
   }
 }
