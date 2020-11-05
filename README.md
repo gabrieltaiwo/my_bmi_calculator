@@ -1,16 +1,9 @@
 # mybmicalculator
 
-A new Flutter application.
+A Body mass index calculator application created with flutter
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Use myBMI calculator to check your body mass index (BMI) and find out if you're a healthy weight, or you can use it to check your child's BMI.
+Input AGE and WEIGHT details using the add "+" or minus "-" buttons and select Height using the height slider on the right.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
